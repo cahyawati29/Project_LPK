@@ -28,7 +28,7 @@ elif option=='Molaritas':
     FP = st.number_input('Masukkan faktor pengali yang diketahui')
     if st.button('HITUNG'):
         Molaritas = Bobot/(BM*Vsampel*FP)
-        st.success(f'Normalitas yang didapat adalah {Molaritas} mmol/mL')
+        st.success(f'Molaritas yang didapat adalah {Molaritas} mmol/mL')
     
 elif option=='Kadar(% b/v)':
     BE = st.number_input('Masukkan BE sampel, dalam satuan mg/mgrek')
@@ -114,7 +114,7 @@ elif option=='Perhitungan pH':
             pOH = -1*np.log10(OH)
             pH = 14-(pOH)
             st.success(f'pH yang didapatkan adalah {pH}')  
-    if option=='Asam Kuat dengan basa lemah':
+    if option=='Basa lemah dengan asam kuat':
         mmol = st.number_input('Masukkan jumlah mmol asam yang diketahui, dalam satuan mmol')
         st.write(f'Nilai mmol adalah {mmol} mmol')
         v = st.number_input('Masukkan volume total larutan yang diketahui, dalam satuan mL')
