@@ -47,7 +47,7 @@ elif option=='Kadar(PPM)':
     FP = st.number_input('Masukkan faktor pengali yang diketahui')
     Vsampel = st.number_input('Masukkan volume sampel, dalam satuan L')
     if st.button('HITUNG'):
-        Kadar_PPM = Volume_titran*BE*M*FP/Vsampel
+        Kadar_PPM = Volume_titran*BM*M*FP/Vsampel
         st.success(f'Kadar PPM yang didapatkan adalah {Kadar_PPM} mg/L')
         
 elif option=='Penentuan jenis larutan berdasarkan pH':
