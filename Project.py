@@ -94,7 +94,7 @@ elif option=='Perhitungan pH':
         'Pilih:',
         ('Asam Kuat dengan basa kuat', 'Asam Lemah dengan basa kuat', 'Basa lemah dengan asam kuat', 'Basa kuat dengan asam kuat'))
     if option=='Asam Kuat dengan basa kuat':
-        mmol = st.number_input('Masukkan jumlah mmol asam yang diketahui, dalam satuan mmol')
+        mmol = st.number_input('Masukkan jumlah mmol yang diketahui')
         st.write(f'Nilai mmol adalah {mmol} mmol')
         v = st.number_input('Masukkan volume total larutan yang diketahui, dalam satuan mL')
         st.write(f'Nilai volume adalah {v} mL')
@@ -115,7 +115,7 @@ elif option=='Perhitungan pH':
             pH = 14-(pOH)
             st.success(f'pH yang didapatkan adalah {pH}')  
     if option=='Basa lemah dengan asam kuat':
-        mmol = st.number_input('Masukkan jumlah mmol asam yang diketahui, dalam satuan mmol')
+        mmol = st.number_input('Masukkan jumlah mmol yang diketahui')
         st.write(f'Nilai mmol adalah {mmol} mmol')
         v = st.number_input('Masukkan volume total larutan yang diketahui, dalam satuan mL')
         st.write(f'Nilai volume adalah {v} mL')
@@ -125,7 +125,7 @@ elif option=='Perhitungan pH':
             pH=-1*np.log10(H)
             st.success(f'pH yang didapatkan adalah {pH}')
     if option=='Basa kuat dengan asam kuat':
-        mmol = st.number_input('Masukkan jumlah mmol asam yang diketahui, dalam satuan mmol')
+        mmol = st.number_input('Masukkan jumlah mmol yang diketahui')
         st.write(f'Nilai mmol adalah {mmol} mmol')
         v = st.number_input('Masukkan volume total larutan yang diketahui, dalam satuan mL')
         st.write(f'Nilai volume adalah {v} mL')
