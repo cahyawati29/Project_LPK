@@ -45,10 +45,10 @@ elif option=='Kadar(PPM)':
     BE = st.number_input('Masukkan BE sampel, dalam satuan mg/mgrek')
     N = st.number_input('Masukkan normalitas yang diketahui, dalam satuan mgrek/mL')
     FP = st.number_input('Masukkan faktor pengali yang diketahui')
-    Bobot = st.number_input('Masukkan bobot yang diketahui, dalam satuan Kg')
+    Vsampel = st.number_input('Masukkan volume sampel, dalam satuan L')
     if st.button('HITUNG'):
-        Kadar_PPM = Volume_titran*BE*N*FP/Bobot
-        st.success(f'Kadar PPM yang didapatkan adalah {Kadar_PPM} mg/Kg')
+        Kadar_PPM = Volume_titran*BE*N*FP/Vsampel
+        st.success(f'Kadar PPM yang didapatkan adalah {Kadar_PPM} mg/L')
         
 elif option=='Penentuan jenis larutan berdasarkan pH':
     #dictionary
