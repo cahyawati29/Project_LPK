@@ -42,7 +42,7 @@ elif option=='Kadar(% b/v)':
         
 elif option=='Kadar(PPM)':
     Volume_titran = st.number_input('Masukkan volume titran yang diketahui, dalam satuan mL')
-    BE = st.number_input('Masukkan BE sampel, dalam satuan mg/mgrek')
+    BM = st.number_input('Masukkan BM sampel, dalam satuan mg/mmol')
     M = st.number_input('Masukkan molaritas yang diketahui, dalam satuan mmol/mL')
     FP = st.number_input('Masukkan faktor pengali yang diketahui')
     Vsampel = st.number_input('Masukkan volume sampel, dalam satuan L')
